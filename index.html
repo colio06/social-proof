@@ -15,17 +15,24 @@
     <title>Frontend Mentor | Social proof section</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css">
-    
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
   </head>
+
   <body>
-    <div class="preview-text">
+    <div class="section1">
       <div class="text">
         <h1>10,000+ of our users love our products.</h1>
         <p>
@@ -34,53 +41,66 @@
           services.
         </p>
       </div>
-      <div class="preview-blocks">
-        <div class="block1">
-          <p><span>⭐⭐⭐⭐⭐ </span> Rated 5 Stars in Reviews</p>
+      <div class="reviews">
+        <div class="review-block1">
+          <span class="review-stars">⭐⭐⭐⭐⭐</span>
+          <span class="review-text"> Rated 5 Stars in Reviews</span>
         </div>
-        <div class="block2">
-          <p><span>⭐⭐⭐⭐⭐ </span> Rated 5 Stars in Report Guru</p>
+        <div class="review-block2">
+          <span class="review-stars">⭐⭐⭐⭐⭐</span>
+          <span class="review-text">Rated 5 Stars in Report Guru </span>
         </div>
-        <div class="block3">
-          <p><span>⭐⭐⭐⭐⭐ </span> Rated 5 Stars in BestTech</p>
+        <div class="review-block3">
+          <span class="review-stars">⭐⭐⭐⭐⭐</span>
+          <span class="review-text"> Rated 5 Stars in Report Guru Rated </span>
         </div>
       </div>
     </div>
-    <div class="lg-blocks">
-      <div class="lg-block1">
-        <h3>
-          <span><img src="./images/image-colton.jpg" alt="" /></span>Clolton
-          Smith
-        </h3>
-        <h4>verified Buyer</h4>
-        <p>
-          "We needed the same printed design as the one we had ordered a week
-          prior. Not only did they find the original order, but we also received
-          it in time. Excellent!"
-        </p>
-      </div>
-      <div class="lg-block2">
-        <h3>
-          <span><img src="./images/image-irene.jpg" alt="" /></span> Irene
-          Roberts
-        </h3>
-        <h4>Verified Buyer</h4>
-        <p>
-          "Customer service is always excellent and very quick turn around.
-          Completely delighted with the simplicity of the purchase and the speed
-          of delivery."
-        </p>
-      </div>
-      <div class="lg-block3">
-        <h3>
-          <span><img src="images/image-anne.jpg" alt="" /></span> Anne Wallace
-        </h3>
-        <h4>Verified Buyer</h4>
-        <p>
-          "Put an order with this company and can only praise them for the very
-          high standard. Will definitely use them again and recommend them to
-          everyone!"
-        </p>
+    <div class="section2">
+      <div class="comments">
+        <div class="comment-block1">
+          <span class="img">
+            <img src="./images/image-colton.jpg" alt="" />
+          </span>
+          <span class="name">
+            <h3>Colton Smith</h3>
+            <h4>Verified Buyer</h4>
+          </span>
+          <p>
+            "We needed the same printed design as the one we had ordered a week
+            prior. Not only did they find the original order, but we also
+            received it in time. Excellent!"
+          </p>
+        </div>
+
+        <div class="comment-block2">
+          <span class="img">
+            <img src="./images/image-irene.jpg" alt="" />
+          </span>
+          <span class="name">
+            <h3>Irene Roberts</h3>
+            <h4>Verified Buyer</h4>
+          </span>
+          <p>
+            "Customer service is always excellent and very quick turn around.
+            Completely delighted with the simplicity of the purchase and the
+            speed of delivery...."
+          </p>
+        </div>
+        <div class="comment-block3">
+          <span class="img">
+            <img src="./images/image-anne.jpg" alt="" />
+          </span>
+          <span class="name">
+            <h3>Anne Wallace</h3>
+            <h4>Verified Buyer</h4>
+          </span>
+          <p>
+            "Put an order with this company and can only praise them for the
+            very high standard. Will definitely use them again and recommend
+            them to everyone!"
+          </p>
+        </div>
       </div>
     </div>
 

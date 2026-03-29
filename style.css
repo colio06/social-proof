@@ -1,172 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:League Spartan ;
+}
+body {
+  padding: 100px;
+}
+p {
+  line-height: 1.5;
+}
+.section1 {
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+}
+.text {
+  h1 {
+    text-align: left;
+    width: 300px;
+    color: hsl(300, 43%, 22%);
+    margin: 20px 0px;
+    font-size: 35px;
+  }
+  p {
+    text-align: left;
+    width: 340px;
+  }
+}
+.reviews {
+  margin: 20px 0px 0px 200px;
+  align-self: center;
+}
+.reviews div {
+  background-color: hsl(300, 24%, 96%);
+  padding: 12px;
+  border-radius: 5px;
+  text-align: center;
+  width: 400px;
+}
+.review-text {
+  color: hsl(300, 43%, 22%);
+}
 
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
+.review-block1 {
+  margin: 0px 0px 0px 0px;
+}
+.review-block2 {
+  margin: 10px 0px 10px 20px;
+}
+.review-block3 {
+  margin: 10px 0px 0px 40px;
+}
+.section2 {
+  margin: 30px;
+}
+.comments {
+  display: flex;
+  flex-direction: row;
+}
+.comments div {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 5px;
+  padding: 20px;
+  height: 240px;
+}
+.comments {
+  .comment-block1 {
+    margin: 0px 10px 0px 0px;
+  }
+  .comment-block2 {
+    margin: 15px 10px;
+  }
+  .comment-block3 {
+    margin: 30px 10px;
+  }
+}
 
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        font-family: League Spartan;
-      }
-      body {
-        margin: 200px;
-      }
+.comments div span {
+  display: inline-block;
+  padding: 8px;
+}
+.comments div span img {
+  width: 50px;
+  border-radius: 50%;
+}
+.name {
+  margin: 10px 0px;
+}
+.comments div span h3 {
+  color: white;
+}
+.comments div span h4 {
+  color: hsl(333, 80%, 67%);
+}
+.comments div p {
+  color: white;
+}
 
-      .preview-text {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-      }
-      .text {
-        text-align: left;
-        width: 50%;
+@media screen and (max-width: 400px) {
+  body {
+    padding: 0px;
+  }
+  .section1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .text {
+    h1 {
+      text-align: center;
+      width: 300px;
+      margin: 20px 0px;
+    }
+    p {
+      text-align: center;
+      width: 300px;
+    }
+  }
+  .reviews {
+    margin: 0px;
+    justify-self: center;
+    padding: 20px;
+  }
+  .review-stars{
+    margin: 10px 0px;
+  }
+  .review-block1 {
+    margin: 0px 0px;
+  }
+  .review-block2 {
+    margin: 10px 0px;
+  }
+  .review-block3 {
+    margin: 0px 0px;
+  }
+  .reviews div {
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
 
-        h1 {
-          width: 400px;
-          margin: 30px 0px;
-          color: hsl(300, 43%, 22%);
-          font-size: 50px;
-        }
-        p {
-          margin: 30px 0px;
-          width: 400px;
-          color: rgb(103, 101, 101);
-          line-height: 1.5;
-        }
-      }
-      .preview-blocks {
-        width: 50%;
-        margin: 50px 0px;
-      }
-      .preview-blocks div {
-        padding: 10px;
-        background-color: hsl(300, 24%, 96%);
-        border-radius: 10px;
-        width: 350px;
-        p {
-          color: hsl(300, 43%, 22%);
-          font-weight: 500;
-        }
-      }
-      .block1 {
-        margin: 0px 0px 10px -20px;
-      }
-      .block2 {
-        margin: 0px 0px 10px 0px;
-      }
-      .block3 {
-        margin: 0px 0px 10px 20px;
-      }
+  .review-block1 {
+    margin: 0px 0px;
+  }
+  .review-block2 {
+    margin: 10px 0;
+  }
+  .review-block3 {
+    margin: 10px 0px;
+  }
+  .section2 {
+    margin: 30px;
+  }
+  .comments {
+    display: flex;
+    flex-direction: column;
+  }
+  .comments div {
+    border-radius: 5px;
+    height: 240px;
+    width: 300px;
+  }
+  .comments {
+    .comment-block1 {
+      margin: 10px;
+    }
+    .comment-block2 {
+      margin: 10px;
+    }
+    .comment-block3 {
+      margin: 10px;
+    }
+  }
 
-      /* larger blocks section */
-      .lg-blocks {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        div {
-          width: 33.3%;
-          text-align: left;
-          background-color: hsl(300, 43%, 22%);
-          border-radius: 10px;
-          padding: 45px;
-          height: fit-content;
-          h3 {
-            color: white;
-            padding-bottom: 5px;
-          }
-          h4 {
-            color: hsl(333, 80%, 67%);
-            padding-bottom: 10px;
-          }
-          p {
-            color: white;
-          }
-        }
-        .lg-block1 {
-          margin: 0px 30px 0px 0px;
-          padding: 40px;
-          p {
-            line-height: 1.5;
-            margin-top: 10px;
-          }
-        }
-        .lg-block2 {
-          margin: 15px 30px 0px 0px;
-          padding: 40px;
-          p {
-            line-height: 1.5;
-            margin-top: 10px;
-          }
-        }
-        .lg-block3 {
-          margin: 30px 30px 0px 0px;
-          padding: 40px;
-          p {
-            line-height: 1.5;
-            margin-top: 10px;
-          }
-        }
-        span {
-          float: left;
-          margin-right: 20px;
-        }
-        span img {
-          width: 40px;
-          border-radius: 50%;
-        }
-      }
-      @media screen and (max-width: 377px) {
-        body {
-          margin: 18px;
-        }
-        .preview-text {
-          display: flex;
-          flex-direction: column;
-          width: 50%;
-        }
-        .text {
-          padding: 0px;
-          
-          h1 {
-            font-size:38px;
-            width: 300px;
-            padding: 0px 15px;
-            text-align-last: center;
-          }
-
-          p {
-            width: 290px;
-            text-align-last: center;
-          }
-        }
-        .preview-blocks {
-          width: 50%;
-          justify-self: center;
-        }
-        .preview-blocks div {
-          width: 300px;
-          margin: 10px auto;
-          span {
-            display: block;
-            margin:15px 0px 15px 25px;
-          }
-          p {
-            padding:0px 0px 0px 50px;
-            font-weight: 700;
-          }
-        }
-        .lg-blocks {
-          display: flex;
-          flex-direction: column;
-          justify-self: center;
-        }
-      }
-      .lg-blocks div {
-        width: 310px;
-        border-radius: 5px;
-      }
+ 
+ 
+  .name {
+    margin: 10px 0px;
+ }
+  
+}
